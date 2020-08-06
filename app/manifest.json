@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "webSiteBlocker",
-  "description": "見たくないサイトやYouTube動画をブロックします",
+  "name": "WEB-SITE-BLOCKER",
+  "description": "URL、またはドメインに基づいて見たくないページをブロックできます。",
   "author": "Cat Loaf Inc.",
   "version": "1.0.0",
   "icons": {
@@ -39,7 +39,6 @@
     "background",
     "contextMenus",
     "storage",
-    "history",
     "webRequest",
     "webRequestBlocking",
     "http://*/*",

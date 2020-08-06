@@ -12,7 +12,7 @@ https://www.gnu.org/licenses/gpl-3.0.html
 ### Overview
 
 chrome ブラウザの拡張機能で動作するブラックリスト型サイトブロッカーです。
-URL、またはドメインに基づいて見たいくないページをブロックできます。
+URL、またはドメインに基づいて見たくないページをブロックできます。
 
 ### Features
 
