@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <script src="./popup.js"></script>
+  </head>
+  <body class="popup__body">
+    <div class="popup__blockButtonContainer">
+      <!-- ページをブロックする -->
+      <div
+        id="blockButtonContainer-pageBlock-button"
+        class="popup__blockButtonContainer-button-pageBlock"
+      ></div>
+      <!-- ドメインをブロックする -->
+      <div
+        id="blockButtonContainer-domainBlock-button"
+        class="popup__blockButtonContainer-button-domainBlock"
+      ></div>
+      <!-- オプション設定を開く -->
+      <div
+        id="blockButtonContainer-openOption-button"
+        class="popup__blockButtonContainer-button-openOption"
+      ></div>
+      <!-- ブロックリストを表示する -->
+      <div
+        id="blockButtonContainer-showBlockList-button"
+        class="popup__blockButtonContainer-button-showBlockList"
+      ></div>
+    </div>
+
+    <!-- ブロックリスト -->
+    <div id="blockListViewContainer" class="popup__blockListViewContainer">
+      <div id="listEditContainer" class="popup__listEditContainer">
+        <!-- 手動追加フィールドを表示するボタン -->
+        <div
+          id="listEditContainer-showButton"
+          class="popup__listEditContainer-showButton"
+        ></div>
+        <!-- ローカルストレージリセットボタン -->
+        <div
+          id="listEditContainer-resetButton"
+          class="popup__listEditContainer-resetButton"
+        ></div>
+      </div>
+
+      <div id="handwritingContainer" class="popup__handwritingContainer">
+        <!-- 手動追加フィールド -->
+        <form id="handwritingContainer-form">
+          <input
+            type="text"
+            id="handwritingContainer-input"
+            class="popup__handwritingContainer-input"
+          />
+          <!-- 決定ボタン -->
+          <span
+            id="handwritingContainer-execButton"
+            class="popup__handwritingContainer-execButton"
+          >
+            <i class="far fa-check-circle"></i>
+          </span>
+        </form>
+      </div>
+
+      <ul
+        id="blockListViewContainer-list"
+        class="popup__blockListViewContainer-list"
+      >
+        <!-- 動的に追加する<li> -->
+      </ul>
+    </div>
+  </body>
+</html>

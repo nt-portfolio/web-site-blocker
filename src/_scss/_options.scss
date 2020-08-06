@@ -1,0 +1,64 @@
+.options__body {
+  background: $backgroundColor;
+  opacity: 0.9;
+}
+
+.options__optionContainer {
+  &-browser {
+    &-header {
+      border-bottom: 2px solid $buttonColor;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &-item {
+        margin: 0 0 10px 0;
+        & > p {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+  &-youtube {
+    &-header {
+      border-bottom: 2px solid $buttonColor;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    &-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      &-item {
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+}
+
+.options__optionContainer-divide {
+  border-bottom: 2px solid $buttonColor;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.options__resetButton {
+  background: $buttonColor;
+  border: transparent;
+  border-radius: 5px;
+  color: $backgroundColor;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 0;
+  padding: 0 10px;
+  text-align: center;
+  transition: 0.3s;
+  &:hover {
+    background: darken($buttonColor, 10%);
+  }
+}

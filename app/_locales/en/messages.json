@@ -1,0 +1,46 @@
+{
+  "block": {
+    "description": "Block",
+    "message": "Block"
+  },
+  "pageBlock": {
+    "description": "Block this page",
+    "message": "Block this page"
+  },
+  "domainBlock": {
+    "description": "Block this domain",
+    "message": "Block this domain"
+  },
+  "option": {
+    "description": "Open options",
+    "message": "Open options"
+  },
+  "showBlockedUrlList": {
+    "description": "Show blocked url list",
+    "message": "Show blocked url list"
+  },
+  "handwriting": {
+    "description": "Enter the URL to block",
+    "message": "Enter the URL to block"
+  },
+  "allReset": {
+    "description": "Reset blocked url list",
+    "message": "Reset blocked url list"
+  },
+  "blockSuccess": {
+    "description": "Blocked",
+    "message": "Blocked"
+  },
+  "blockFailed": {
+    "description": "Block failed",
+    "message": "Block failed"
+  },
+  "resetBlockListConfirm": {
+    "description": "Are you sure you want to initialize 'Block list'?",
+    "message": "Are you sure you want to initialize 'Block list'?"
+  },
+  "resetOptionConfirm": {
+    "description": "Are you sure you want to initialize 'option'?",
+    "message": "Are you sure you want to initialize 'option'?"
+  }
+}

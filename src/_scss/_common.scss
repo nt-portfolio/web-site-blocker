@@ -1,0 +1,22 @@
+// フェードアウト
+.common__fadeout {
+  animation: fadeOut 2.5s;
+  animation-fill-mode: both;
+  visibility: visible;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

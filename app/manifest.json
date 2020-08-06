@@ -1,0 +1,53 @@
+{
+  "manifest_version": 2,
+  "name": "webSiteBlocker",
+  "description": "見たくないサイトやYouTube動画をブロックします",
+  "author": "Cat Loaf Inc.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "./icons/icon16.png",
+    "32": "./icons/icon32.png",
+    "48": "./icons/icon48.png",
+    "128": "./icons/icon128.png"
+  },
+  "default_locale": "ja",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_end",
+      "js": ["./content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "./assets/*.gif",
+    "./assets/*.png",
+    "./assets/*.jpg",
+    "./options.js"
+  ],
+  "background": {
+    "scripts": ["./background.js"],
+    "persistant": true
+  },
+  "browser_action": {
+    "default_icon": "./icons/icon32.png",
+    "default_title": "webSiteBlocker",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "background",
+    "contextMenus",
+    "storage",
+    "history",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true,
+    "open_in_tab": true
+  }
+}

@@ -1,0 +1,106 @@
+.popup__body {
+  background: $backgroundColor;
+  font-size: 12px;
+  opacity: 0.9;
+  width: 300px;
+}
+
+.popup__blockButtonContainer {
+  display: block;
+  text-align: left;
+  &-button {
+    &-pageBlock {
+      @include button($buttonColor, $backgroundColor);
+    }
+    &-domainBlock {
+      @include button($buttonColor, $backgroundColor);
+    }
+    &-openOption {
+      @include button(#333333, $backgroundColor);
+    }
+    &-showBlockList {
+      @include button(#333333, $backgroundColor);
+    }
+  }
+}
+
+.popup__listEditContainer {
+  display: flex;
+  &-showButton {
+    background: $buttonGrayColor;
+    border: transparent;
+    border-radius: 5px;
+    color: $fontColor;
+    cursor: pointer;
+    display: inline-block;
+    flex: 1;
+    font-size: 11px;
+    justify-content: space-between;
+    margin: 10px 5px 10px 0;
+    padding: 5px 10px;
+    transition: 0.3s;
+    &:hover {
+      background: darken($buttonGrayColor, 10%);
+    }
+  }
+  &-resetButton {
+    background: $buttonGrayColor;
+    border: transparent;
+    border-radius: 5px;
+    color: $fontColor;
+    cursor: pointer;
+    display: inline-block;
+    flex: 1;
+    font-size: 11px;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 5px 10px;
+    transition: 0.3s;
+    &:hover {
+      background: darken($buttonGrayColor, 10%);
+    }
+  }
+}
+
+.popup__handwritingContainer {
+  display: none;
+  &-input {
+    margin: 0 0 10px 0;
+    width: 89%;
+  }
+  &-execButton {
+    cursor: pointer;
+    margin: 0 0 0 5px;
+  }
+}
+
+.popup__blockListViewContainer {
+  border-bottom: 1px solid #808080;
+  border-top: 1px solid #808080;
+  display: none;
+  margin: 5px 10px;
+  &-list {
+    clear: both;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &-li {
+      padding: 10px 0;
+    }
+  }
+  &-list-item-div {
+    border-top: 1px solid #f7f7f7;
+    color: #808080;
+    margin: 0;
+    padding: 5px 0;
+    width: 100%;
+    &:last-child {
+      border-bottom: 1px solid #f7f7f7;
+    }
+    &-li-delete {
+      color: #808080;
+      cursor: pointer;
+      float: right;
+    }
+  }
+}

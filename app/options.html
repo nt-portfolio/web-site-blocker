@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <script src="./options.js"></script>
+  </head>
+  <body class="options__body">
+    <h1>
+      オプション
+    </h1>
+    <div class="options__optionContainer">
+      <p class="options__optionContainer-browser-header">
+        ブラウザに関する設定
+      </p>
+      <ul class="options__optionContainer-browser-list">
+        <!-- Future work -->
+        <!-- <li class="options__optionContainer-browser-list-item">
+          <p>ブロックタイプを選択してください</p>
+          <div>
+            <input
+              type="radio"
+              id="options__blockType-black"
+              name="blockType"
+              checked
+            />
+            <label for="options__blockType-black">ブラックリスト</label>
+            <input
+              type="radio"
+              id="options__blockType-white"
+              name="blockType"
+            />
+            <label for="options__blockType-white">ホワイトリスト</label>
+          </div>
+        </li> -->
+        <li class="options__optionContainer-browser-list-item">
+          <input type="checkbox" id="options__browser-blocklistMask" />
+          <label for="options__browser-blocklistMask"
+            >ブロックリストをマスクする</label
+          >
+        </li>
+      </ul>
+      <p class="options__optionContainer-youtube-header">
+        YouTubeに関する設定
+      </p>
+      <ul class="options__optionContainer-youtube-list">
+        <li class="options__optionContainer-youtube-list-item">
+          <input type="checkbox" id="options__youtube-commentHide" />
+          <label for="options__youtube-commentHide"
+            >コメントを非表示にする</label
+          >
+        </li>
+        <li class="options__optionContainer-youtube-list-item">
+          <input type="checkbox" id="options__youtube-chatHide" />
+          <label class="" for="options__youtube-chatHide">
+            チャットを非表示にする</label
+          >
+        </li>
+      </ul>
+      <p roll="separater" class="options__optionContainer-divide">&nbsp;</p>
+      <div id="options__resetButton" class="options__resetButton">
+        オプション設定を初期化する
+      </div>
+    </div>
+  </body>
+</html>

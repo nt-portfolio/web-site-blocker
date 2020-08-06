@@ -1,0 +1,48 @@
+{
+  "name": "websiteblocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "eslint": "./node_modules/.bin/eslint ./src/js/module/**/*.js",
+    "eslint-fix": "./node_modules/.bin/eslint --fix ./src/js/module/**/*.js",
+    "lint-css": "stylelint ./src/_scss/*.scss",
+    "format-css": "stylelint --fix ./src/_scss/*.scss"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/polyfill": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^9.8.5",
+    "babel-jest": "^26.2.2",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.5.0",
+    "jest": "^26.2.2",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "prettier-stylelint": "^0.4.2",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.2",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.18.0",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "crx-hotreload": "^1.0.4",
+    "jquery": "^3.5.1"
+  }
+}

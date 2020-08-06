@@ -1,0 +1,18 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "plugins": ["stylelint-scss", "stylelint-prettier", "stylelint-order"],
+  "rules": {
+    "prettier/prettier": true,
+    "order/properties-alphabetical-order": true,
+    "block-no-empty": true,
+    "comment-no-empty": true,
+    "no-eol-whitespace": true,
+    "length-zero-no-unit": true,
+    "color-named": "never",
+    "color-hex-case": "lower",
+    "color-hex-length": "long",
+    "string-quotes": "double",
+    "selector-pseudo-element-colon-notation": "single",
+    "color-no-invalid-hex": true
+  }
+}

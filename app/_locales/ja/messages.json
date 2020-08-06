@@ -1,0 +1,46 @@
+{
+  "block": {
+    "description": "ブロックする",
+    "message": "ブロックする"
+  },
+  "pageBlock": {
+    "description": "このページをブロックする",
+    "message": "このページをブロックする"
+  },
+  "domainBlock": {
+    "description": "このドメインをブロックする",
+    "message": "このドメインをブロックする"
+  },
+  "option": {
+    "description": "オプションを開く",
+    "message": "オプションを開く"
+  },
+  "showBlockedUrlList": {
+    "description": "ブロックリストを表示する",
+    "message": "ブロックリストを表示する"
+  },
+  "handwriting": {
+    "description": "ブロックするURLを直接入力する",
+    "message": "URLを直接入力する"
+  },
+  "allReset": {
+    "description": "ブロックリストをリセットする",
+    "message": "リセットする"
+  },
+  "blockSuccess": {
+    "description": "ブロックしました",
+    "message": "ブロックしました"
+  },
+  "blockFailed": {
+    "description": "ブロックに失敗しました",
+    "message": "ブロックに失敗しました"
+  },
+  "resetBlockListConfirm": {
+    "description": "ブロックリストを初期化してもよろしいですか？",
+    "message": "ブロックリストを初期化してもよろしいですか？"
+  },
+  "resetOptionConfirm": {
+    "description": "オプションを初期化してもよろしいですか？",
+    "message": "オプションを初期化してもよろしいですか？"
+  }
+}

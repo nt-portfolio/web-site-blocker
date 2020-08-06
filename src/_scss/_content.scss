@@ -1,0 +1,45 @@
+.content__blockButton {
+  color: $fontLightColor;
+  cursor: pointer;
+  font-size: 0.8rem;
+  margin-left: 10px;
+  position: relative;
+  top: -3px;
+  visibility: visible;
+}
+
+.content__blockButton-menu {
+  background: $backgroundColor;
+  border: 1px solid #333333;
+  box-shadow: 2px 2px 4px $fontLightColor;
+  color: $fontColor;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 80px;
+  z-index: 10000;
+  & ul {
+    list-style: none;
+  }
+  & ul li {
+    cursor: pointer;
+    padding: 5px 15px;
+    &:hover {
+      background: #e7e7e7;
+    }
+  }
+  & ul li:first-child {
+    border-bottom: 1px solid #333333;
+  }
+}
+
+.content__blockButton-transparent {
+  background: transparent;
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
